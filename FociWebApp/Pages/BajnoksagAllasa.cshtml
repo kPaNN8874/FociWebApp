@@ -9,10 +9,13 @@
 		<tr>
 			<th>Helyezés</th>
 			<th>Csapat Neve</th>
-			<th>JM</th>
-			<th>Gy</th>
-			<th>D</th>
-			<th>V</th>
+			<th>Játszott mérkőzések</th>
+			<th>Győzelem</th>
+			<th>Döntetlen</th>
+			<th>Vereség</th>
+			<th>Pontszám</th>
+			<td>Lőtt gól</td>
+			<td>Kapott gól</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -23,6 +26,19 @@
 					@(i+1)
 				</td>
 				<td>@Model.csapatStatisztika[i].CsapatNev</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].JatszottMeccsekSzama</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].GyozelmekSzama</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].DontetlenekSzama</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].VeresegekSzama</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].LottGolokSzama</td>
+				<td></td>
+				<td>@Model.csapatStatisztika[i].kapottGolokSzama</td>
+				<td></td>
 			</tr>
 		}
 	</tbody>
